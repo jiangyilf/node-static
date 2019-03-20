@@ -8,6 +8,6 @@ module.exports = [{
     method: 'GET',
     path: '/favicon.ico',
     handler: (request, h) => {
-        return h.file('/favicon.ico')
+        return h.file('../favicon.ico')
     }
 }]
