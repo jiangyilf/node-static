@@ -6,11 +6,6 @@ const static = require('./routes/static')
 const server = Hapi.server({
     port: 3000,
     host: '127.0.0.1',
-    /*routes: {
-        files: {
-            relativeTo: Path.join(__dirname, 'public')
-        }
-    }*/
 })
 
 const init = async () => {
