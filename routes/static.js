@@ -2,10 +2,12 @@ const PATH_NAME = 'public'
 
 module.exports = [{
     method: 'GET',
-    path: `/${PATH_NAME}/{filename}`,
+    path: `/${PATH_NAME}/{param*}`,
     handler: {
-        file: function (request) {
-            return request.params.filename;
+        directory: {
+            path: '.',
+            redirectToSlash: true,
+            index: true,
         }
     }
 }]
