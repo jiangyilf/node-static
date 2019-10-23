@@ -2,3 +2,22 @@
     padding: 0;
     margin: 0;
 }
+.container{
+	display: flex;
+	height: 100vh;
+	flex-flow: column;
+}
+.body{
+	flex: 1;
+}
+.footer{
+	height: 40px;
+	font-size: 12px;
+	text-align: center;
+}
+.title{
+	margin-top: 20px;
+	font-size: 24px;
+	color: #333;
+	text-align: center;
+}
